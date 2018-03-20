@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black_dialog">#333333</color>
+    <color name="black">#000000</color>
+    <color name="main_blue">#00acf3</color>
+    <color name="main_blue_sel">#0198d6</color>
+    <color name="white">#FFF</color>
+    <color name="blow_menu_bg">#f5f5f5</color>
+    <color name="menu_select_line">#FAFAFA</color>
+    <color name="blow_menu_line">#cccccc</color>
+    <color name="blow_menu_textcolor">#4c4c4c</color>
+    <color name="text_color_select">#4d4d4d</color>
+    <color name="title_line">#024357</color>
+    <color name="text_color_black">#9a9a9a</color>
+    <color name="text_color_gray">#999999</color>
+    <color name="text_color_green">#f1f346</color>
+    <color name="dialog_bg_start">#58d0fd</color>
+    <color name="dialog_bg_end">#32baf2</color>
+    <color name="dialog_bg_start_sel">#4eb7df</color>
+    <color name="dialog_bg_end_sel">#32da6d</color>
+    <color name="et_bg_gray">#f2f2f2</color>
+    <color name="line_gray">#e6e6e6</color>
+    <color name="line_gray_main">#d9d9d9</color>
+    <color name="white_trac">#66ffffff</color>
+    <color name="reboot_btn_ok">#ff5273</color>
+    <color name="black_bg_black">#808080</color>
+    <color name="black_bg_text">#F2F2F2</color>
+    <color name="side_zi">#CD5FFE</color>
+    <color name="transparent">#00000000</color>
+    <color name="blue">#5998ce</color>
+    <color name="black_tran">#66000000</color>
+</resources>

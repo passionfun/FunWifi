@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/linear_user"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/main_blue"
+         >
+
+        <ImageButton
+            android:id="@+id/tv_menu_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="15dp"
+            android:background="@mipmap/slid_top_image" />
+
+        <TextView
+            android:id="@+id/tv_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/router_airmesh"
+            android:layout_alignBottom="@+id/tv_menu_image"
+            android:layout_toRightOf="@+id/tv_menu_image"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/lv_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/line_gray_main"
+        android:layout_marginTop="1dp"
+        android:dividerHeight="1dp"
+        android:layoutAnimation="@anim/slide_listview"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_gray_main" />
+
+</LinearLayout>

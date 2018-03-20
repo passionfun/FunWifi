@@ -1,0 +1,262 @@
+<resources>
+    <string name="app_name">恩家</string>
+    <string name="blow_router">路由器</string>
+    <string name="blow_system">系统</string>
+    <string name="blow_system_setting">系统</string>
+    <string name="blow_tool">工具</string>
+    <string name="not_wifi">未连接Wi-Fi，请先连接</string>
+    <string name="conn_router">请连接恩家路由器</string>
+    <string name="reconn_router">和路由器断开，请重新连接</string>
+    <string name="btn_conn_wifi">点击连接Wi-Fi</string>
+    <string name="btn_set_new_router">连接路由</string>
+    <string name="btn_retry">点击重试</string>
+    <string name="user_agreement"><![CDATA[登录则表示您同意遵守路由器的<font color=\'#4c4c4c\'><u>用户协议</u></font>和<font color=\'#4c4c4c\'><u>隐私协议</u></font>]]></string>
+    <string name="search_device">正在检测设备，请稍后...</string>
+    <string name="search_device_no">未检测设备，请检查连接设备是否正确</string>
+    <string name="find_router">发现子母路由器</string>
+    <string name="find_router_logon">检测到设备，请输入管理密码</string>
+    <string name="input_password">请输入管理密码</string>
+    <string name="input_password_wifi">请输入Wi-Fi密码</string>
+    <string name="input_password2">请输入密码</string>
+    <string name="input_name">请输入登录名</string>
+    <string name="input_wifi_name">请输入Wi-Fi名称</string>
+    <string name="bind_router">立即绑定</string>
+    <string name="find_router_name">ENJIAN_子母路由器</string>
+    <string name="bind">连接</string>
+    <string name="cancel">取消</string>
+    <string name="next">下一步</string>
+    <string name="pppoe">PPPoe上网</string>
+    <string name="dynamic">动态上网</string>
+    <string name="static_state">静态上网</string>
+    <string name="select_login">选择上网方式</string>
+    <string name="broadband_conn">宽带连接</string>
+    <string name="login_name">登陆名</string>
+    <string name="login_password">密码</string>
+    <string name="login">登陆</string>
+    <string name="login_success">登陆成功</string>
+    <string name="login_success_msg">已连接上外网，请点击下一步</string>
+    <string name="set_password">设置密码</string>
+    <string name="wifi_name">Wi-Fi名称</string>
+    <string name="wifi_name_note">(默认2.4G&#038;5G使用同一名称)</string>
+    <string name="admin_password_note">(管理密码同Wi-Fi密码)</string>
+    <string name="admin_password">管理密码</string>
+    <string name="input_admin_password">管理密码两次不一致</string>
+    <string name="wifi_password">Wi-Fi密码</string>
+    <string name="input_wifi_password">Wi-Fi密码两次不一致</string>
+    <string name="wifi_password_note">(用于管理你的路由器)</string>
+    <string name="admin_password_reconfirm">再次确认</string>
+    <string name="wifi_password_reconfirm">再次确认密码</string>
+    <string name="btn_ok">确定</string>
+    <string name="set_password_after">完成密码设置后将会断开网络重新连接</string>
+    <string name="set_ok">设置成功</string>
+    <string name="user_agreement_c1">\u3000\u3000本协议为您与本APP管理者之间所订立的契约，具有合同的法律效力，请您仔细阅读。</string>
+    <string name="user_agreement_c2">一、 本协议内容、生效、变更</string>
+    <string name="user_agreement_c3">\u3000\u3000本协议内容包括协议正文及所有本APP已经发布的或将来可能发布的各类规则。所有规则为本协议不可分割的组成部分，与协议正文具有同等法律效力。如您对协议有任何疑问，应向本APP咨询。您在同意所有协议条款并完成注册程序，才能成为本站的正式用户，您点击“我以阅读并同意本APP用户协议和法律协议”按钮后，本协议即生效，对双方产生约束力。  只要您使用本APP平台服务，则本协议即对您产生约束，届时您不应以未阅读本协议的内容或者未获得本APP对您问询的解答等理由，主张本协议无效，或要求撤销本协议。您确认：本协议条款是处理双方权利义务的契约，始终有效，法律另有强制性规定或双方另有特别约定的，依其规定。 您承诺接受并遵守本协议的约定。如果您不同意本协议的约定，您应立即停止注册程序或停止使用本APP平台服务。本APP有权根据需要不定期地制订、修改本协议及/或各类规则，并在本APP平台公示，不再另行单独通知用户。变更后的协议和规则一经在网站公布，立即生效。如您不同意相关变更，应当立即停止使用本APP平台服务。您继续使用本APP平台服务的，即表明您接受修订后的协议和规则。 </string>
+    <string name="user_agreement_c4">二、 注册</string>
+    <string name="user_agreement_c5">\u3000\u3000注册资格用户须具有法定的相应权利能力和行为能力的自然人、法人或其他组织，能够独立承担法律责任。您完成注册程序或其他本APP平台同意的方式实际使用本平台服务时，即视为您确认自己具备主体资格，能够独立承担法律责任。若因您不具备主体资格，而导致的一切后果，由您及您的监护人自行承担。</string>
+    <string name="user_agreement_c6">注册资料</string>
+    <string name="user_agreement_c7">\u3000\u3000用户应自行诚信向本站提供注册资料，用户同意其提供的注册资料真实、准确、完整、合法有效，用户注册资料如有变动的，应及时更新其注册资料。如果用户提供的注册资料不合法、不真实、不准确、不详尽的，用户需承担因此引起的相应责任及后果，并且本APP保留终止用户使用本平台各项服务的权利。</string>
+    <string name="user_agreement_c8">\u3000\u3000用户在本站进行浏览等活动时，涉及用户真实姓名/名称、通信地址、联系电话、电子邮箱等隐私信息的，本站将予以严格保密，除非得到用户的授权或法律另有规定，本站不会向外界披露用户隐私信息。</string>
+    <string name="user_agreement_c9">三、 账户</string>
+    <string name="user_agreement_c10">\u3000\u3000您注册成功后，即成为本APP平台的会员，将持有本APP平台唯一编号的账户信息，您可以根据本站规定改变您的密码。</string>
+    <string name="user_agreement_c11">\u3000\u3000您设置的姓名为真实姓名，不得侵犯或涉嫌侵犯他人合法权益。否则，本APP有权终止向您提供服务，注销您的账户。账户注销后，相应的会员名将开放给任意用户注册登记使用。</string>
+    <string name="user_agreement_c12">\u3000\u3000您应谨慎合理的保存、使用您的会员名和密码，应对通过您的会员名和密码实施的行为负责。除非有法律规定或司法裁定，且征得本APP的同意，否则，会员名和密码不得以任何方式转让、赠与或继承（与账户相关的财产权益除外）。</string>
+    <string name="user_agreement_c13">\u3000\u3000用户不得将在本站注册获得的账户借给他人使用，否则用户应承担由此产生的全部责任，并与实际使用人承担连带责任。 </string>
+    <string name="user_agreement_c14">\u3000\u3000如果发现任何非法使用等可能危及您的账户安全的情形时，您应当立即以有效方式通知本APP要求暂停相关服务，并向公安机关报案。您理解本APP对您的请求采取行动需要合理时间，本APP对在采取行动前已经产生的后果（包括但不限于您的任何损失）不承担任何责任。</string>
+    <string name="user_agreement_c15">四、 用户信息的合理使用</string>
+    <string name="user_agreement_c16">\u3000\u3000您同意本APP平台拥有通过邮件、短信电话等形式，向在本站注册用户发送信息等告知信息的权利。</string>
+    <string name="user_agreement_c17">\u3000\u3000您了解并同意，本APP有权应国家司法、行政等主管部门的要求，向其提供您在本APP平台填写的注册信息和交易记录等必要信息</string>
+    <string name="router_terminal">终端</string>
+    <string name="router_intelligent_device">智能设备</string>
+    <string name="router_upload_speed">上传速度</string>
+    <string name="router_download_speed">下载速度</string>
+    <string name="router_mobile_phone">小米4移动版</string>
+    <string name="router_airmesh_point">子路由</string>
+    <string name="router_cable">有线接入</string>
+    <string name="router_wireless">无线接入</string>
+    <string name="router_airmesh">子母路由器</string>
+    <string name="left_menu_add">功能添加</string>
+    <string name="quit_app">要退出程序吗？</string>
+    <string name="quit_sure">确定</string>
+    <string name="quit_cancel">取消</string>
+
+    <string name="menu_rocket_boost">一键优化</string>
+    <string name="menu_healthy_mode">健康模式</string>
+    <string name="menu_schedule_reboot">重启计划</string>
+    <string name="menu_parental_control">家长控制</string>
+    <string name="menu_green_wifi">绿色Wi-Fi</string>
+    <string name="menu_blacklist">黑名单</string>
+    <string name="menu_smart_qos">智能限速</string>
+    <string name="menu_guest_wifi">访客Wi-Fi</string>
+    <string name="menu_wifi">Wi-Fi设置</string>
+    <string name="menu_network">网络设置</string>
+    <string name="menu_management">管理员密码</string>
+    <string name="menu_upgrade_firmware">版本更新</string>
+    <string name="menu_reset">恢复出厂</string>
+    <string name="menu_led">指示灯状态</string>
+    <string name="add_a_feature">功能添加</string>
+    <string name="add_ones_available">可添加工具</string>
+
+    <string name="system_password">密码管理</string>
+    <string name="reboot">重启</string>
+    <string name="retore_factory">恢复出厂设置</string>
+    <string name="new_version">最新版本：3.0.0</string>
+    <string name="upgrade">更新</string>
+    <string name="led_stats">指示灯状态</string>
+
+    <string name="wifi_setting">Wi-Fi设置</string>
+    <string name="wifi_2_4">2.4G Wi-Fi开关</string>
+    <string name="wifi_ssid">名称</string>
+    <string name="wifi_setting_password">密码</string>
+    <string name="wifi_advanced">高级设置</string>
+    <string name="wifi_5g">5G Wi-Fi开关</string>
+
+    <string name="network_internet_ok">网络连接正常</string>
+    <string name="network_internet_not">网络连接失败</string>
+    <string name="network_wan_type">当前模式</string>
+    <string name="network_dymanic_ip">动态IP上网</string>
+    <string name="current_password">原密码</string>
+    <string name="new_password">新密码</string>
+    <string name="confirm_password">确认新密码</string>
+    <string name="reboot_btn">立即重启</string>
+    <string name="reboot_content">重启后将中断当前所有连接，大概需要一分钟的时间恢复，重启后当前手机可能需要手工连接Wi-Fi。</string>
+    <string name="reboot_reboot">重启中...</string>
+    <string name="reboot_router">重启路由</string>
+    <string name="reboot_router_conetxt">重启后当前手机可能需要手工连接Wi-Fi</string>
+    <string name="restore_factory">恢复出厂设置</string>
+    <string name="restore_factory_ing">恢复出厂设置中...</string>
+    <string name="restore_factory_btn">恢复出厂设置</string>
+    <string name="restore_factory_context">恢复出厂设置后将会清除所有的路由器设置和个人数据</string>
+    <string name="tool_list">系统工具</string>
+    <string name="rocket_boost">Wi-Fi一键优化</string>
+    <string name="rocket_boost_ing">优化中..</string>
+    <string name="rocket_boost_btn">点击优化</string>
+    <string name="rocket_wifi_quality">Wi-Fi质量</string>
+    <string name="rocket_signal_strength">信号强度</string>
+    <string name="menu_blacklist_list">黑名单列表</string>
+    <string name="firmware_context">路由器更新期间，网络会停止工作一段时间，如需检查更新,请点下方按钮。</string>
+    <string name="firmware_btn">检查更新</string>
+    <string name="check_new_version">正在检测新版本...</string>
+    <string name="not_new_version">当前已是最新版本</string>
+    <string name="upgrade_up">升级</string>
+    <string name="get_new_version">检测到新版本%1$s，请确认是否升级。</string>
+
+    <string name="green_speed_mode">睡眠模式</string>
+    <string name="green_speed_context">减弱Wi-Fi信号，更节能、更环保、更健康</string>
+    <string name="green_standard_mode">标准模式</string>
+    <string name="green_standard_context">标准Wi-Fi信号，满足日常上网需求</string>
+    <string name="green_boost_mode">穿墙模式</string>
+    <string name="green_boost_context">增强Wi-Fi信号，提升Wi-Fi穿墙能力</string>
+    <string name="green_smart_mode">智能Wi-Fi模式</string>
+    <string name="green_smart_context">智能调节模式，让生活更简洁</string>
+
+    <string name="smart_upload_speed">外网最高上传速度</string>
+    <string name="smart_download_speed">外网最高下载速度</string>
+    <string name="smart_equal_broadband">相当于5M宽带</string>
+    <string name="smart_manual_limit">手动限速</string>
+    <string name="smart_manual_qos">手动限速</string>
+    <string name="smart_priority">按照应用优先级分配网络</string>
+    <string name="smart_auto">自动</string>
+    <string name="smart_guest_qos">访客Wi-Fi限速</string>
+    <string name="smart_device_list">限速设备管理</string>
+    <string name="smart_manual_up">上传限速：</string>
+    <string name="smart_manual_down">下载限速：</string>
+
+    <string name="smart_priority_auto">自动分配</string>
+    <string name="smart_priority_auto_context">系统根据需要，自动分配网速</string>
+    <string name="smart_priority_video">视频优先</string>
+    <string name="smart_priority_video_context">优先保证看视频的网速，高清也流畅</string>
+    <string name="smart_priority_gaming">游戏优先</string>
+    <string name="smart_priority_gaming_context">优先保证玩游戏的网速，保证不卡顿、不掉线</string>
+    <string name="smart_priority_web">网页优先</string>
+    <string name="smart_priority_web_context">优先保证浏览网页的速度，高清大图秒开</string>
+    <string name="smart_device_context">上传速度：232.5KB/s  下载速度：155KB/s</string>
+    <string name="device_smart_list">设备限速管理</string>
+    <string name="device_upload">上传速度</string>
+    <string name="device_download">下载速度</string>
+    <string name="device_traffic">流量消耗：</string>
+    <string name="device_parental">家长控制</string>
+    <string name="device_parental_context">控制设备的联网时间和上网访问</string>
+    <string name="device_smart">智能限速</string>
+    <string name="device_smart_context">灵活控制设备的网速</string>
+    <string name="device_blacklist">加入黑名单</string>
+    <string name="device_blacklist_context">禁止该设备访问网络</string>
+    <string name="online_user">在线用户</string>
+    <string name="offline_schedule">定时上网</string>
+    <string name="offline_schedule_content">控制网络的连接时间</string>
+    <string name="offline_repeat">重复</string>
+    <string name="offline_everyday">每天</string>
+    <string name="offline_mon">一</string>
+    <string name="offline_tues">二</string>
+    <string name="offline_wed">三</string>
+    <string name="offline_thur">四</string>
+    <string name="offline_fri">五</string>
+    <string name="offline_sat">六</string>
+    <string name="offline_sun">日</string>
+    <string name="offline_wifi_off">断网时间</string>
+    <string name="offline_wifi_on">上网时间</string>
+    <string name="offline_time_set">时间设置</string>
+    <string name="offline_time_h">时</string>
+    <string name="offline_time_min">分</string>
+
+    <string name="device_rename">修改备注</string>
+    <string name="device_input_rename">请输入备注</string>
+    <string name="find_router_not">未检测到设备</string>
+    <string name="wifi_high_set">高级设置</string>
+    <string name="wifi_high_encryption">加密方式</string>
+    <string name="wifi_high_mixed">混合加密（WPA/WPA2）</string>
+    <string name="wifi_high_power">信号强度</string>
+    <string name="wifi_high_channel_bandwidht">频带宽度</string>
+    <string name="wifi_high_channel">无线信道</string>
+    <string name="wifi_password_error">密码错误</string>
+
+    //--------------------------------------------------
+
+    <string name="login_waning">设置中，请稍后...</string>
+    <string name="static_ip">IP地址</string>
+    <string name="static_netmask">地址掩码</string>
+    <string name="static_gateway">网关地址</string>
+    <string name="static_dns1">dns1地址</string>
+    <string name="static_dns2">dns2地址</string>
+    <string name="static_input_ip">请输入IP地址</string>
+    <string name="static_input_netmask">请输入地址掩码</string>
+    <string name="static_input_gateway">请输入网关地址</string>
+    <string name="static_input_dns1">请输入dns1地址</string>
+
+
+
+    <string name="smart_device">设备限速</string>
+    <string name="smart_lim_su">限定速度：</string>
+    <string name="smart_over_big">限制最大带宽</string>
+    <string name="smart_over_smal">保障最小带宽</string>
+    <string name="smart_no_set">请设置后提交</string>
+
+    <string name="wifi_com">提交</string>
+
+
+    <string name="wifi_reboot_apply">重启后生效</string>
+    <string name="add_device">添加设备</string>
+    <string name="add_device_ok">添加成功</string>
+    <string name="qos_lim_width">限定速度：</string>
+
+    <string name="offline_better">断网时间不能早于上网时间</string>
+    <string name="main_login_router">请先设置新设备</string>
+    //fun add
+    <string name="main_login_router_NoWifi">Wifi未连接，请连接Wifi</string>
+
+
+    <string name="first_search_1">已检测到子母路由器</string>
+    <string name="first_search_2">已检测到AirBox</string>
+    <string name="first_search_3">已检测到AirOptimus</string>
+    <string name="first_search_4">已检测到AirFrame</string>
+    //fun add
+    <string name="first_search_s1">子母路由器</string>
+    <string name="first_search_s2">AirBox</string>
+    <string name="first_search_s3">AirOptimus</string>
+    <string name="first_search_s4">AirFrame</string>
+
+    <string name="first_quick_setup">快速安装</string>
+    <string name="device_xiansu_eg">E.g. 512KB/s = 5Mbps</string>
+
+    <string name="high_set_xindao">Wi-Fi信息获取失败，请稍后再试</string>
+</resources>

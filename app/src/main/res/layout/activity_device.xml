@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical"
+	>
+	<RelativeLayout
+		android:id="@+id/main_top_banner"
+		android:layout_width="match_parent"
+		android:background="@color/main_blue"
+		android:layout_height="60dip" >
+		<TextView
+			android:id="@+id/tv_title"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_marginLeft="55dp"
+			android:layout_marginRight="55dp"
+			android:layout_centerInParent="true"
+			android:gravity="center_vertical"
+			android:textColor="@color/white"
+			android:singleLine="true"
+			android:text="@string/app_name"
+			android:textSize="20sp"
+			android:textStyle="bold"/>
+
+		<ImageView
+			android:id="@+id/im_back"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:padding="5dp"
+			android:layout_centerVertical="true"
+			android:layout_alignParentLeft="true"
+			android:layout_marginLeft="5dp"
+			android:src="@drawable/top_back_select"
+			/>     <ImageView
+		android:id="@+id/im_right"
+		android:layout_width="40dp"
+		android:layout_height="40dp"
+		android:padding="5dp"
+		android:layout_centerVertical="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="15dp"
+		android:src="@mipmap/top_right_edit"
+		/>
+		<TextView
+			android:id="@+id/tv_next"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="15dp"
+			android:textSize="14dp"
+			android:visibility="gone"
+			android:textColor="@color/white"
+			android:text="@string/next"
+			/>
+
+
+
+	</RelativeLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="150dp"
+		android:background="@color/main_blue"
+		android:gravity="center_vertical"
+		android:orientation="vertical">
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:orientation="horizontal">
+		<TextView
+			android:id="@+id/textView10"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/device_traffic"
+			android:textColor="@color/white_trac"
+			android:textSize="12sp" />
+			<TextView
+			android:id="@+id/tv_total"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="54.0KB"
+			android:textColor="@color/white_trac"
+			android:textSize="12sp" />
+        </LinearLayout>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="100dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<RelativeLayout
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="30dp"
+				android:layout_weight="1">
+
+				<TextView
+					android:id="@+id/textView5"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerHorizontal="true"
+					android:text="@string/device_upload"
+					android:textColor="@color/white_trac"
+					android:textSize="12sp" />
+
+				<TextView
+					android:id="@+id/tv_up_sudu"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/textView5"
+					android:layout_centerHorizontal="true"
+					android:text="002.3"
+					android:textColor="@color/white"
+					android:textSize="25sp" />
+
+				<TextView
+					android:id="@+id/tv_up_sudu_kb"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/tv_up_sudu"
+					android:layout_centerHorizontal="true"
+					android:text="KB/s"
+					android:textColor="@color/white_trac"
+					android:textSize="10sp" />
+
+			</RelativeLayout>
+
+			<ImageView
+				android:id="@+id/iv_password_old"
+				android:layout_width="60dp"
+				android:layout_height="60dp"
+				android:padding="5dp"
+				android:src="@mipmap/device_phone_wight" />
+
+			<RelativeLayout
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="30dp"
+				android:layout_weight="1"
+				>
+
+
+				<TextView
+					android:id="@+id/textView7"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerHorizontal="true"
+					android:text="@string/device_download"
+					android:textColor="@color/white_trac"
+					android:textSize="12sp" />
+
+				<TextView
+					android:id="@+id/tv_down_sudu"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/textView7"
+					android:layout_centerHorizontal="true"
+					android:text="014.8"
+					android:textColor="@color/white"
+					android:textSize="25sp" />
+
+				<TextView
+					android:id="@+id/tv_down_sudu_kb"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/tv_down_sudu"
+					android:layout_centerHorizontal="true"
+					android:text="KB/s"
+					android:textColor="@color/white_trac"
+					android:textSize="10sp" />
+			</RelativeLayout>
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/ly_select_pppoe"
+		android:layout_width="match_parent"
+		android:layout_height="64dp"
+		android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+		<ImageView
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:src="@mipmap/device_jia"/>
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center_vertical"
+			android:orientation="vertical">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:layout_weight="1"
+			android:layout_marginLeft="5dp"
+			android:textColor="@color/text_color_select"
+			android:text="@string/device_parental" />
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="12sp"
+				android:layout_weight="1"
+				android:layout_marginLeft="5dp"
+				android:textColor="@color/text_color_black"
+				android:text="@string/device_parental_context" />
+			</LinearLayout>
+
+		<ImageView
+			style="@style/menu_list_jiantou"
+			android:padding="5dp"
+			android:src="@mipmap/next_arrow"/>
+	</LinearLayout>
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+		android:background="@color/line_gray_main"/>
+
+	<LinearLayout
+		android:id="@+id/ly_select_pppoe1"
+		android:layout_width="match_parent"
+		android:layout_height="64dp"
+		android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+		<ImageView
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:src="@mipmap/device_xiansu"/>
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center_vertical"
+			android:orientation="vertical">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:layout_weight="1"
+			android:layout_marginLeft="5dp"
+			android:textColor="@color/text_color_select"
+			android:text="@string/device_smart" />
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="12sp"
+				android:layout_weight="1"
+				android:layout_marginLeft="5dp"
+				android:textColor="@color/text_color_black"
+				android:text="@string/device_smart_context" />
+			</LinearLayout>
+
+		<ImageView
+			style="@style/menu_list_jiantou"
+			android:padding="5dp"
+			android:src="@mipmap/next_arrow"/>
+	</LinearLayout>
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+		android:background="@color/line_gray_main"/>
+
+	<LinearLayout
+		android:id="@+id/ly_select_pppoe2"
+		android:layout_width="match_parent"
+		android:layout_height="64dp"
+		android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+
+		<ImageView
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:src="@mipmap/device_black" />
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:gravity="center_vertical"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="5dp"
+					android:layout_weight="1"
+					android:text="@string/device_blacklist"
+					android:textColor="@color/text_color_select"
+					android:textSize="16sp" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="5dp"
+					android:layout_weight="1"
+					android:text="@string/device_blacklist_context"
+					android:textColor="@color/text_color_black"
+					android:textSize="12sp" />
+			</LinearLayout>
+			<com.xalianhui.wifimanage.ui.view.SwitchButton
+				android:id="@+id/msgpush_voiceset"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="right|center_vertical"
+				/>
+		</LinearLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+		android:background="@color/line_gray_main"/>
+
+</LinearLayout>

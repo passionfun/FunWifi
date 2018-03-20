@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_white_shape">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/find_router_logon"
+        android:textColor="@color/blow_menu_textcolor"
+        android:textSize="14sp"
+        android:id="@+id/textView" />
+    <EditText
+        android:id="@+id/et_dialog_password"
+        android:layout_width="210dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="60dp"
+        android:ems="10"
+        android:textSize="12sp"
+        android:background="@drawable/side_gray_shape"
+        android:inputType="textPassword" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/ly_blow_btn"
+        android:background="@color/line_gray"/>
+    <LinearLayout
+        android:id="@+id/ly_blow_btn"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_bind_router"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/bind"
+            android:background="@android:color/transparent"
+            android:textColor="@color/main_blue"
+            android:textSize="12sp"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/line_gray"/>
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:background="@android:color/transparent"
+            android:textColor="@color/text_color_gray"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_password"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:padding="5dp"
+        android:layout_alignEnd="@+id/et_dialog_password"
+        android:layout_alignTop="@+id/et_dialog_password"
+        android:src="@drawable/eye_passwprd_select" />
+
+
+</RelativeLayout>

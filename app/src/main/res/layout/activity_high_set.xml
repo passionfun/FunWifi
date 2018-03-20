@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xalianhui.wifimanage.ui.activity.SelectLoginActivity"
+    >
+    <include
+        android:id="@+id/main_top_banner"
+        layout="@layout/head_login" />
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ly_high_encrypt"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:textColor="@color/text_color_select"
+            android:text="@string/wifi_high_encryption" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/text_color_black"
+            android:text="@string/wifi_high_mixed" />
+        <ImageView
+            style="@style/menu_list_jiantou"
+            android:padding="5dp"
+            android:src="@mipmap/next_arrow"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ly_high_encrypt2"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:textColor="@color/text_color_select"
+            android:text="@string/wifi_high_power" />
+        <TextView
+            android:id="@+id/tv_high_qiangdu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/text_color_black"
+            android:text="@string/smart_auto" />
+        <ImageView
+            style="@style/menu_list_jiantou"
+            android:padding="5dp"
+            android:src="@mipmap/next_arrow"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/line_gray_main"/>
+
+    <LinearLayout
+        android:id="@+id/ly_high_encrypt3"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:textColor="@color/text_color_select"
+            android:text="@string/wifi_high_channel_bandwidht" />
+        <TextView
+            android:id="@+id/tv_high_daikuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/text_color_black"
+            android:text="20M" />
+        <ImageView
+            style="@style/menu_list_jiantou"
+            android:padding="5dp"
+            android:src="@mipmap/next_arrow"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/line_gray_main"/>
+
+    <LinearLayout
+        android:id="@+id/ly_high_encrypt4"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:textColor="@color/text_color_select"
+            android:text="@string/wifi_high_channel" />
+        <TextView
+            android:id="@+id/tv_high_xindao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/text_color_black"
+            android:text="@string/smart_auto" />
+        <ImageView
+            style="@style/menu_list_jiantou"
+            android:padding="5dp"
+            android:src="@mipmap/next_arrow"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/line_gray_main"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:textColor="@color/text_color_select"
+            android:text="WMM" />
+        <com.xalianhui.wifimanage.ui.view.SwitchButton
+            android:id="@+id/msgpush_voiceset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/line_gray_main"/>
+
+</LinearLayout>

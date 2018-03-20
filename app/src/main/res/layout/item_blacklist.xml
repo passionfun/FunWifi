@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+     >
+    <ImageView
+        android:id="@+id/iv_item_img"
+    android:layout_width="38dp"
+    android:layout_height="38dp"
+    android:src="@mipmap/device_phone" />
+
+    <TextView
+        android:id="@+id/tv_black_name"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:text="小米4移动版"
+        android:textColor="@color/text_color_select"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/iv_black_del"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:padding="5dp"
+        android:src="@mipmap/black_delect" />
+
+</LinearLayout>

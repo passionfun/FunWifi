@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_tran"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+    <View
+        android:id="@+id/tv_top_popu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:minHeight="200dp"
+        android:layout_weight="1"
+        />
+    <ListView
+        android:id="@+id/lv_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/line_gray_main"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:dividerHeight="1px"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="5dp"
+    android:background="@drawable/menu_listitem_select"
+    android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/item_maingrad_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitCenter"
+             />
+
+        <TextView
+            android:id="@+id/item_maingrad_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_maingrad_img"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/slide_menu_text_select"
+            android:text="TextView" />
+        <ImageView
+            android:id="@+id/item_maingrad_remark"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/tool_select"
+            android:scaleType="fitCenter"
+         />
+
+
+</RelativeLayout>

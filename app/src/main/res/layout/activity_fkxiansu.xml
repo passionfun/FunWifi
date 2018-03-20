@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include
+        android:id="@+id/main_top_banner"
+        layout="@layout/head_login" />
+    <LinearLayout
+        android:id="@+id/ly_high_encrypt1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/text_color_select"
+            android:text="@string/smart_manual_up" />
+        <TextView
+            android:id="@+id/tv_xiansu_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/text_color_select"
+            android:text="500KB/s" />
+
+    </LinearLayout>
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:maxHeight="2dip"
+        android:minHeight="2dip"
+        android:progressDrawable="@drawable/po_seekbar"
+        android:thumb="@mipmap/seekbar_thumb"
+        />
+    <LinearLayout
+        android:id="@+id/ly_high_encrypt2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/text_color_select"
+            android:text="@string/smart_manual_down" />
+        <TextView
+            android:id="@+id/tv_xiansu_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/text_color_select"
+            android:text="500KB/s" />
+
+    </LinearLayout>
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:maxHeight="2dip"
+        android:minHeight="2dip"
+        android:progressDrawable="@drawable/po_seekbar"
+        android:thumb="@mipmap/seekbar_thumb"/>
+
+
+</LinearLayout>

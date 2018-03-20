@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_black_shape">
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/retore_factory"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:id="@+id/tv_dialog_title" />
+    <TextView
+        android:layout_width="210dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tv_dialog_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:id="@+id/tv_context"
+        android:text="@string/restore_factory_context"
+         />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/ly_blow_btn"
+        android:background="@color/line_gray"/>
+    <LinearLayout
+        android:id="@+id/ly_blow_btn"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:background="@android:color/transparent"
+            android:textColor="@color/white"
+            android:textSize="12sp"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/line_gray"/>
+        <Button
+            android:id="@+id/btn_bind_router"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/upgrade_up"
+            android:background="@android:color/transparent"
+            android:textColor="@color/white"
+            android:textSize="12sp"/>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xalianhui.wifimanage">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_app"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_app"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name="com.xalianhui.wifimanage.app.App">
+        <activity android:name=".ui.activity.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.MainActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action  android:name = "com.xalianhui.wifimanage.ui.activity.MainActivity"  />
+                <category android:name = "android.intent.category.DEFAULT"  />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.SelectLoginActivity">
+            <intent-filter>
+                <action  android:name = "com.xalianhui.wifimanage.ui.activity.SelectLoginActivity"  />
+                <category android:name = "android.intent.category.DEFAULT"  />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.BroadbandActivity">
+            <intent-filter>
+                <action  android:name = "com.xalianhui.wifimanage.ui.activity.BroadbandActivity"  />
+                <category android:name = "android.intent.category.DEFAULT"  />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.SetPasswordActivity">
+            <intent-filter>
+                <action  android:name = "com.xalianhui.wifimanage.ui.activity.SetPasswordActivity"  />
+                <category android:name = "android.intent.category.DEFAULT"  />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.SetWifiActivity">
+            <intent-filter>
+                <action  android:name = "com.xalianhui.wifimanage.ui.activity.SetWifiActivity"  />
+                <category android:name = "android.intent.category.DEFAULT"  />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.HighSetActivity"
+            android:theme="@style/SampleTheme.Light">
+            <intent-filter>
+                <action  android:name = "com.xalianhui.wifimanage.ui.activity.HighSetActivity"  />
+                <category android:name = "android.intent.category.DEFAULT"  />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.AdminPasswActivity">
+            <intent-filter>
+                <action  android:name = "com.xalianhui.wifimanage.ui.activity.AdminPasswActivity"  />
+                <category android:name = "android.intent.category.DEFAULT"  />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.NetSetActivity">
+            <intent-filter>
+                <action  android:name = "com.xalianhui.wifimanage.ui.activity.NetSetActivity"  />
+                <category android:name = "android.intent.category.DEFAULT"  />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.RestoreActivity">
+            <intent-filter>
+                <action  android:name = "com.xalianhui.wifimanage.ui.activity.RestoreActivity"  />
+                <category android:name = "android.intent.category.DEFAULT"  />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.RebootActivity">
+            <intent-filter>
+                <action  android:name = "com.xalianhui.wifimanage.ui.activity.RebootActivity"  />
+                <category android:name = "android.intent.category.DEFAULT"  />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.DeviceXQActivity"/>
+        <activity android:name=".ui.activity.MenuSelectActivity">
+            <intent-filter>
+                <action  android:name = "com.xalianhui.wifimanage.ui.activity.MenuSelectActivity"  />
+                <category android:name = "android.intent.category.DEFAULT"  />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.OneActivity">
+            <intent-filter>
+                <action  android:name = "com.xalianhui.wifimanage.ui.activity.OneActivity"  />
+                <category android:name = "android.intent.category.DEFAULT"  />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.HealthyActivity">
+            <intent-filter>
+                <action  android:name = "com.xalianhui.wifimanage.ui.activity.HealthyActivity"  />
+                <category android:name = "android.intent.category.DEFAULT"  />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.JiazhangActivity">
+            <intent-filter>
+                <action  android:name = "com.xalianhui.wifimanage.ui.activity.JiazhangActivity"  />
+                <category android:name = "android.intent.category.DEFAULT"  />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.GreenWIFIActivity">
+            <intent-filter>
+                <action  android:name = "com.xalianhui.wifimanage.ui.activity.GreenWIFIActivity"  />
+                <category android:name = "android.intent.category.DEFAULT"  />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.BlackActivity">
+            <intent-filter>
+                <action  android:name = "com.xalianhui.wifimanage.ui.activity.BlackActivity"  />
+                <category android:name = "android.intent.category.DEFAULT"  />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.XiansuActivity">
+            <intent-filter>
+                <action  android:name = "com.xalianhui.wifimanage.ui.activity.XiansuActivity"  />
+                <category android:name = "android.intent.category.DEFAULT"  />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.SDXiansuActivity">
+            <intent-filter>
+                <action  android:name = "com.xalianhui.wifimanage.ui.activity.SDXiansuActivity"  />
+                <category android:name = "android.intent.category.DEFAULT"  />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.FirmWareActivity">
+            <intent-filter>
+                <action  android:name = "com.xalianhui.wifimanage.ui.activity.FirmWareActivity"  />
+                <category android:name = "android.intent.category.DEFAULT"  />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.FkXiansuActivity">
+            <intent-filter>
+                <action  android:name = "com.xalianhui.wifimanage.ui.activity.FkXiansuActivity"  />
+                <category android:name = "android.intent.category.DEFAULT"  />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.XiansuAppActivity">
+            <intent-filter>
+                <action  android:name = "com.xalianhui.wifimanage.ui.activity.XiansuAppActivity"  />
+                <category android:name = "android.intent.category.DEFAULT"  />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.XiansuDeviceActivity">
+            <intent-filter>
+                <action  android:name = "com.xalianhui.wifimanage.ui.activity.XiansuDeviceActivity"  />
+                <category android:name = "android.intent.category.DEFAULT"  />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.DeviceXiansuActivity">
+            <intent-filter>
+                <action  android:name = "com.xalianhui.wifimanage.ui.activity.DeviceXiansuActivity"  />
+                <category android:name = "android.intent.category.DEFAULT"  />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.UserAgreementActivity">
+            <intent-filter>
+                <action  android:name = "com.xalianhui.wifimanage.ui.activity.UserAgreementActivity"  />
+                <category android:name = "android.intent.category.DEFAULT"  />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.StaticWanActivity">
+            <intent-filter>
+                <action  android:name = "com.xalianhui.wifimanage.ui.activity.StaticWanActivity"  />
+                <category android:name = "android.intent.category.DEFAULT"  />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.AddDeviceActivity">
+            <intent-filter>
+                <action  android:name = "com.xalianhui.wifimanage.ui.activity.AddDeviceActivity"  />
+                <category android:name = "android.intent.category.DEFAULT"  />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.JiazDeviceActivity">
+            <intent-filter>
+                <action  android:name = "com.xalianhui.wifimanage.ui.activity.JiazDeviceActivity"  />
+                <category android:name = "android.intent.category.DEFAULT"  />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.OfflineActivity"
+            android:theme="@style/SampleTheme.Light">
+            <intent-filter>
+                <action  android:name = "com.xalianhui.wifimanage.ui.activity.OfflineActivity"  />
+                <category android:name = "android.intent.category.DEFAULT"  />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
