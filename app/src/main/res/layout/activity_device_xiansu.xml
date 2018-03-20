@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical"
+	>
+	<include
+		android:id="@+id/main_top_banner"
+		layout="@layout/head_login" />
+
+
+	<LinearLayout
+		android:id="@+id/ly_select_pppoe"
+		android:layout_width="match_parent"
+		android:layout_height="64dp"
+		android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+
+		<ImageView
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:src="@mipmap/device_phone" />
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center_vertical"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dp"
+				android:layout_weight="1"
+				android:text="小米4移动版"
+				android:textColor="@color/text_color_select"
+				android:textSize="16sp" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dp"
+				android:layout_weight="1"
+				android:text="@string/smart_device_context"
+				android:textColor="@color/text_color_black"
+				android:textSize="12sp" />
+		</LinearLayout>
+
+		<ImageView
+			style="@style/menu_list_jiantou"
+			android:padding="5dp"
+			android:src="@mipmap/next_arrow" />
+	</LinearLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+		android:background="@color/line_gray_main"/>
+
+	<LinearLayout
+		android:id="@+id/ly_select_pppoe1"
+		android:layout_width="match_parent"
+		android:layout_height="64dp"
+		android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+		<ImageView
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:src="@mipmap/device_phone"/>
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center_vertical"
+			android:orientation="vertical">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:layout_weight="1"
+			android:layout_marginLeft="5dp"
+			android:textColor="@color/text_color_select"
+			android:text="小米4移动版" />
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="12sp"
+				android:layout_weight="1"
+				android:layout_marginLeft="5dp"
+				android:textColor="@color/text_color_black"
+				android:text="@string/smart_device_context" />
+			</LinearLayout>
+
+		<ImageView
+			style="@style/menu_list_jiantou"
+			android:padding="5dp"
+			android:src="@mipmap/next_arrow"/>
+	</LinearLayout>
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+		android:background="@color/line_gray_main"/>
+
+	<LinearLayout
+		android:id="@+id/ly_select_pppoe2"
+		android:layout_width="match_parent"
+		android:layout_height="64dp"
+		android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+
+		<ImageView
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:src="@mipmap/device_phone" />
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center_vertical"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dp"
+				android:layout_weight="1"
+				android:text="小米4移动版"
+				android:textColor="@color/text_color_select"
+				android:textSize="16sp" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dp"
+				android:layout_weight="1"
+				android:text="@string/smart_device_context"
+				android:textColor="@color/text_color_black"
+				android:textSize="12sp" />
+		</LinearLayout>
+
+		<ImageView
+			style="@style/menu_list_jiantou"
+			android:padding="5dp"
+			android:src="@mipmap/next_arrow"/>
+	</LinearLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+		android:background="@color/line_gray_main"/>
+
+</LinearLayout>

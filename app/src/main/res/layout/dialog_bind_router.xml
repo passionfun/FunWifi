@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_blue">
+
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="155dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/first_dialog_router" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/find_router"
+        android:textColor="@color/white"
+        android:textSize="12sp"/>
+    <TextView
+        android:id="@+id/tv_router_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/btn_bind_router"
+        android:layout_centerHorizontal="true"
+        android:text="@string/find_router_name"
+        android:textColor="@color/text_color_black"
+        android:textSize="12sp"/>
+    <Button
+        android:id="@+id/btn_bind_router"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/bind_router"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_bule_shape"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

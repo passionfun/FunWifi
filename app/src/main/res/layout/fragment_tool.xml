@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="@color/white"
+	>
+	<include
+		android:id="@+id/main_top_banner"
+		layout="@layout/head" />
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/menu_select_line"
+		android:orientation="horizontal">
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="16sp"
+		android:layout_margin="8dp"
+		android:textColor="@color/text_color_gray"
+		android:text="@string/tool_list" />
+		</LinearLayout>
+
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<LinearLayout
+			android:id="@+id/ly_tool_one"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:layout_weight="1"
+			android:paddingTop="30dp"
+			android:paddingBottom="30dp"
+			android:orientation="vertical">
+			<ImageView
+				android:id="@+id/iv_top"
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:src="@mipmap/tool_one" />
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="16sp"
+				android:lines="1"
+				android:textColor="@color/text_color_select"
+				android:text="@string/menu_rocket_boost" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/ly_tool_jiaz"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:layout_weight="1"
+			android:paddingTop="30dp"
+			android:paddingBottom="30dp"
+			android:orientation="vertical">
+			<ImageView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:src="@mipmap/tool_jiaz" />
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="16sp"
+				android:lines="1"
+				android:textColor="@color/text_color_select"
+				android:text="@string/menu_parental_control" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/ly_tool_green"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:layout_weight="1"
+			android:paddingTop="30dp"
+			android:visibility="gone"
+			android:paddingBottom="30dp"
+			android:orientation="vertical">
+			<ImageView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:src="@mipmap/tool_green" />
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="16sp"
+				android:layout_weight="1"
+				android:lines="1"
+				android:textColor="@color/text_color_select"
+				android:text="@string/menu_green_wifi" />
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<LinearLayout
+			android:id="@+id/ly_tool_black"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:layout_weight="1"
+			android:paddingTop="30dp"
+			android:paddingBottom="30dp"
+			android:orientation="vertical">
+			<ImageView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:src="@mipmap/tool_black" />
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="16sp"
+				android:layout_weight="1"
+				android:lines="1"
+				android:textColor="@color/text_color_select"
+				android:text="@string/menu_blacklist" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/ly_tool_xians"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:layout_weight="1"
+			android:paddingTop="30dp"
+			android:paddingBottom="30dp"
+			android:orientation="vertical">
+			<ImageView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:src="@mipmap/tool_xiansu" />
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="16sp"
+				android:layout_weight="1"
+				android:lines="1"
+				android:textColor="@color/text_color_select"
+				android:text="@string/menu_smart_qos" />
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:layout_weight="1"
+			android:visibility="gone"
+			android:orientation="vertical">
+
+		</LinearLayout>
+	</LinearLayout>
+
+
+</LinearLayout>

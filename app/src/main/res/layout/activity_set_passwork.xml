@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include
+        android:id="@+id/main_top_banner"
+        layout="@layout/head_login" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/text_color_select"
+        android:text="@string/wifi_name"
+        android:id="@+id/textView2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:textSize="12sp"
+            android:textColor="@color/text_color_black"
+            android:text="@string/wifi_name_note" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        >
+        <EditText
+            android:id="@+id/et_wifi_name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="60dp"
+            android:ems="10"
+            android:textSize="12sp"
+            android:background="@drawable/side_gray_shape"
+             />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/text_color_select"
+        android:text="@string/wifi_password"
+        android:id="@+id/textView4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/textView4"
+            android:layout_alignBottom="@+id/textView4"
+            android:textSize="12sp"
+            android:textColor="@color/text_color_black"
+            android:text="@string/admin_password_note"
+            android:id="@+id/textView3" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            style="@style/CustomCheckBoxTheme"
+            android:layout_toEndOf="@+id/textView3"
+            android:layout_alignBottom="@+id/textView4"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        >
+        <EditText
+            android:id="@+id/et_wifi_admin_pass"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="60dp"
+            android:ems="10"
+            android:textSize="12sp"
+            android:background="@drawable/side_gray_shape"
+            android:inputType="textPassword" />
+        <ImageView
+            android:id="@+id/iv_wifi_admin_pass"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:padding="5dp"
+            android:layout_alignEnd="@+id/et_wifi_admin_pass"
+            android:layout_alignTop="@+id/et_wifi_admin_pass"
+            android:src="@drawable/eye_passwprd_select" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/text_color_select"
+        android:text="@string/admin_password_reconfirm" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+       >
+        <EditText
+            android:id="@+id/et_wifi_admin_pass2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="60dp"
+            android:ems="10"
+            android:textSize="12sp"
+            android:background="@drawable/side_gray_shape"
+            android:inputType="textPassword" />
+        <ImageView
+            android:id="@+id/iv_wifi_admin_pass2"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:padding="5dp"
+            android:layout_alignEnd="@+id/et_wifi_admin_pass2"
+            android:layout_alignTop="@+id/et_wifi_admin_pass2"
+            android:src="@drawable/eye_passwprd_select" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ly_admin_password">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/text_color_select"
+                android:text="@string/admin_password"
+                android:id="@+id/textView6" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/textView6"
+                android:layout_alignBottom="@+id/textView6"
+                android:textSize="12sp"
+                android:textColor="@color/text_color_black"
+                android:text="@string/wifi_password_note" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            >
+            <EditText
+                android:id="@+id/et_wifi_pass"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="60dp"
+                android:ems="10"
+                android:textSize="12sp"
+                android:background="@drawable/side_gray_shape"
+                android:inputType="textPassword"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+            <ImageView
+                android:id="@+id/iv_wifi_pass"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:padding="5dp"
+                android:layout_alignEnd="@+id/et_wifi_pass"
+                android:layout_alignTop="@+id/et_wifi_pass"
+                android:src="@drawable/eye_passwprd_select" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/text_color_select"
+            android:text="@string/wifi_password_reconfirm" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            >
+            <EditText
+                android:id="@+id/et_wifi_pass2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="60dp"
+                android:ems="10"
+                android:textSize="12sp"
+                android:background="@drawable/side_gray_shape"
+                android:inputType="textPassword" />
+            <ImageView
+                android:id="@+id/iv_wifi_pass2"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:padding="5dp"
+                android:layout_alignEnd="@+id/et_wifi_pass2"
+                android:layout_alignTop="@+id/et_wifi_pass2"
+                android:src="@drawable/eye_passwprd_select" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/text_color_black"
+        android:text="@string/set_password_after" />
+
+    <TextView
+        android:id="@+id/btn_login"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/btn_ok"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:background="@drawable/btn_blue_select"
+         />
+
+
+</LinearLayout>

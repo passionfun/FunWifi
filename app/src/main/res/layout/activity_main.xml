@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xalianhui.wifimanage.ui.activity.MainActivity"
+    >
+
+
+    <FrameLayout
+        android:id="@+id/main_fragment_context"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white" >
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blow_menu_line"
+        />
+    <LinearLayout
+        android:id="@+id/blow_menu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/blow_menu_bg"
+        >
+        <LinearLayout
+            android:id="@+id/blow_menu_router"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:clickable="true"
+
+            >
+            <ImageView
+                style="@style/Theme_image_menu"
+                android:duplicateParentState="true"
+                android:background="@drawable/blow_menu_router"/>
+            <TextView
+                style="@style/Theme_text_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:duplicateParentState="true"
+                android:text="@string/blow_router"
+                 />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/blow_menu_system"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:clickable="true"
+            >
+            <ImageView
+                style="@style/Theme_image_menu"
+                android:duplicateParentState="true"
+                android:background="@drawable/blow_menu_system"/>
+            <TextView
+                style="@style/Theme_text_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:duplicateParentState="true"
+                android:text="@string/blow_system"
+                 />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/blow_menu_tool"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            android:clickable="true"
+            >
+            <ImageView
+                style="@style/Theme_image_menu"
+                android:duplicateParentState="true"
+                android:background="@drawable/blow_menu_tool"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                style="@style/Theme_text_menu"
+                android:duplicateParentState="true"
+                android:text="@string/blow_tool"
+                 />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

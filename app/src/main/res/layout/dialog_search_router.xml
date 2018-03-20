@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_blue_shape">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="250dp"
+        android:layout_height="155dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/first_dialog_router" />
+
+    <LinearLayout
+        android:id="@+id/dialog_ly_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/imageView3"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        >
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.ProgressBar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:indeterminateDuration="1200"
+            android:indeterminateDrawable="@drawable/progressbar_rotate"
+             />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/search_device"
+            android:textColor="@color/white"
+            android:textSize="12sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/dialog_ly_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        >
+
+        <TextView
+            android:id="@+id/dialog_tv_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search_device_no"
+            android:textColor="@color/text_color_green"
+            android:textSize="12sp"/>
+        <Button
+            android:id="@+id/btn_conn_wifi"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/btn_retry"
+            android:textColor="@color/main_blue"
+            android:textSize="16sp"
+            android:background="@drawable/btn_white_shape"
+            android:layout_below="@+id/tv_not_wifi"
+            android:layout_centerHorizontal="true" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

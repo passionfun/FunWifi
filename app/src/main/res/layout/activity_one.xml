@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include
+        android:id="@+id/main_top_banner"
+        layout="@layout/head_login" />
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="center_horizontal"
+        android:background="@color/main_blue"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/iv_top"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/one_image_wight" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ly_system_wifi"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            style="@style/menu_list_image"
+            android:src="@mipmap/system_wifi"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/text_color_select"
+            android:text="@string/rocket_wifi_quality" />
+        <ImageView
+            style="@style/menu_list_jiantou"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:src="@mipmap/next_arrow"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/line_gray_main"/>
+    <LinearLayout
+        android:id="@+id/ly_system_net"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            style="@style/menu_list_image"
+            android:src="@mipmap/tool_one_xinhao"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/text_color_select"
+            android:text="@string/rocket_signal_strength" />
+        <ImageView
+            style="@style/menu_list_jiantou"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:src="@mipmap/next_arrow"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/line_gray_main"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_ok"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@color/main_blue"
+        android:text="@string/rocket_boost_btn" />
+
+</LinearLayout>
