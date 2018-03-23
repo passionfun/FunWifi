@@ -85,21 +85,48 @@ public class MainControl extends BaseActivityControl {
     BroadcastReceiver newwarn_receiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
-            boolean str = intent.getExtras().getBoolean("isRoute");
-            Log.i("newwarn_receiver", "onReceive =====>" + str);
-            if (!str) {
+            if(intent.getAction().equals(Consts.ACTION_REQUEXT_ERROR)){
+                Log.i(tag,"收到ACTION_REQUEXT_ERROR广播");
+               boolean isConnRouter =  intent.getExtras().getBoolean("isRoute");
+                if (!isConnRouter) {
 //				ShowToast(getResString(R.string.reconn_router));
-                if (!Cache.isConnRouter) {
-                    Intent intent2 = new Intent(mActivity, MainActivity.class);
-                    mActivity.startActivity(intent2);
-                    if (firstFragment != null) {
-                        firstFragment.setNOConnt();
-                        Log.i(tag,"firstFragment not null");
+                    if (!Cache.isConnRouter) {
+                        Intent intent2 = new Intent(mActivity, MainActivity.class);
+                        mActivity.startActivity(intent2);
+                        if (firstFragment != null) {
+                            firstFragment.setNOConnt();
+                            Log.i(tag, "firstFragment not null");
+                        }else{
+                            Log.i(tag,"firstFragment is null");
+                        }
+                        // fun add 侧边栏是打开状态，手动断开网络，侧边栏关闭。（左边侧边栏关闭，在没有WiFi网络的情况下）
+                        if(routerFragment != null){
+                            Log.i(tag, "routerFragment not null");
+                            routerFragment.closeSlideMenu();
+                        }else{
+                            Log.i(tag, "routerFragment is null");
+                        }
                     }
-
                 }
-//				onStart();
+            }else{
+                Log.i(tag,"收到其他广播");
             }
+//            boolean str = intent.getExtras().getBoolean("isRoute");
+//            Log.i("newwarn_receiver", "onReceive =====>" + str);
+//            if (!str) {
+////				ShowToast(getResString(R.string.reconn_router));
+//                if (!Cache.isConnRouter) {
+//                    Intent intent2 = new Intent(mActivity, MainActivity.class);
+//                    mActivity.startActivity(intent2);
+//                    if (firstFragment != null) {
+//                        firstFragment.setNOConnt();
+//                        Log.i(tag, "firstFragment not null");
+//                    }else{
+//                        Log.i(tag,"firstFragment is null");
+//                    }
+//                }
+////				onStart();
+//            }
         }
     };
 
@@ -124,7 +151,6 @@ public class MainControl extends BaseActivityControl {
         initData();
 //		WifiUtils.getIPAddress(mActivity);
     }
-
     private void initData() {
         if (WifiUtils.NetworkDetector(mActivity) != 1 || !Cache.isConnRouter || !Cache.isLogin) {
             setSelectFrag(Consts.FRAG_INDEX_MAIN_FIRST);
@@ -146,10 +172,25 @@ public class MainControl extends BaseActivityControl {
 
     @Event(value = {R.id.blow_menu_router, R.id.blow_menu_system, R.id.blow_menu_tool})
     private void select(View v) {
+        //fun remove 3 lines
         if (v.getId() != R.id.blow_menu_router && (!Cache.isConnRouter || !Cache.isLogin)) {
             ShowToast(getResString(R.string.main_login_router));
             return;
         }
+        //fun add 1.没有连路由器（wifi）2.没有登陆。两种情况分开提示
+//        if (v.getId() != R.id.blow_menu_router) {
+//            if (!Cache.isConnRouter) {
+//                ShowToast(getResString(R.string.main_login_router_NoWifi));
+//                return;
+//            } else {
+//                if (!Cache.isLogin) {
+//                    ShowToast(getResString(R.string.main_login_router));
+//                    return;
+//                }
+//            }
+//        }else{
+//
+//        }
 
         lyRouter.setSelected(false);
         lySystem.setSelected(false);
@@ -162,7 +203,9 @@ public class MainControl extends BaseActivityControl {
                 } else if (!Cache.isConnRouter) {
                     setSelectFrag(Consts.FRAG_INDEX_MAIN_FIRST);
                     firstFragment.Refresh();
-                } else {
+                }else if(!Cache.isLogin){//fun add 防止用户在没有登录的状态不会显示routerfragment默认的布局界面
+                    setSelectFrag(Consts.FRAG_INDEX_MAIN_FIRST);
+                }else {
                     setSelectFrag(Consts.FRAG_INDEX_MAIN_ROUTER);
                 }
                 break;
@@ -407,6 +450,8 @@ public class MainControl extends BaseActivityControl {
             switch (msg.what) {
                 case 0:
                     getRouterHttp();
+                    // fun add 如果用户在后台把管理员的密码修改了的话，当前router界面显示连接路由按钮的界面（把onStart的方法逻辑重新走一遍）
+//                    onStart();
                     break;
                 case 1:
 //					IsRouteHelp.getInstance().loginHttp(null);

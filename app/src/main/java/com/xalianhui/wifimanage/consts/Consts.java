@@ -13,8 +13,8 @@ public class Consts {
 	public static final String KEY_ISFIRST= "isfrist";
 	public static final String FRIST_PASSWORD= "admin";
 
-    public static final String ACTION_BROADCAST_LOCATION = "action.broadcast.location";//新的问题
-    public static final String ACTION_REQUEXT_ERROR = "action.broadcast.location";//新的问题
+    public static final String ACTION_BROADCAST_LOCATION = "action.devicebroadcast.location";//新的问题
+    public static final String ACTION_REQUEXT_ERROR = "action.norouterbroadcast.location";//新的问题
 	public static enum TopPage {
 		 MAIN, PAGE, PAGE2
 	}

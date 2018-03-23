@@ -37,8 +37,9 @@ import org.xutils.x;
 import miky.android.common.util.PreferencesUtils;
 
 
-public class FirstControl extends BaseFragmentControl {
 
+public class FirstControl extends BaseFragmentControl {
+	private static final String tag = "FirstControl";
 
     @ViewInject(R.id.tv_not_wifi)
     private TextView tvNotWifi;
@@ -55,6 +56,7 @@ public class FirstControl extends BaseFragmentControl {
 	private MntDialog bindDialog;
 	private boolean isFrist ;
 	private int isSelect ;//0 为未设置 ，1 子母路由 ，2 airbox ，3 金刚路由 ，  4 相框路由
+	private boolean isShowTip = false;
 	@Override
 	public void onInit(View rootView, Context context) {
 		super.onInit(rootView, context);
@@ -65,6 +67,11 @@ public class FirstControl extends BaseFragmentControl {
 	
 	private void initView() {
 		if (WifiUtils.NetworkDetector(mActivity) != 1){
+			//fun add 4 lines==>if not wifi ,dissmiss dialog ,show not wifi （点击重试按钮（未检测到设备，请检查连接的设备是否正确）对话框）
+			if(mntDialog != null && mntDialog.isShowing()){
+				mntDialog.dismiss();
+				mntDialog = null;
+			}
 			tvNotWifi.setText(getResString(R.string.not_wifi));
 			btnConnWifi.setVisibility(View.VISIBLE);
 			btnSetNewWifi.setVisibility(View.GONE);
@@ -106,11 +113,13 @@ public class FirstControl extends BaseFragmentControl {
 	}
 	@Event(value = R.id.btn_set_new_router)
 	private void connRouter(View v) {
+		Log.i(tag,"点击连接路由");
 		IsRouteHelp.getInstance().loginHttp(new OnHttpSelector() {
 			@Override
 			public void onResult(String result) {
 				IsNewRouter mVersion = JsonUtil.getObject(result, IsNewRouter.class);
 				if (mVersion != null) {
+					Log.i(tag,"onResult:"+mVersion.getIs_new()+"=="+mVersion.getDev_type());
 					if ("0".equals(mVersion.getIs_new())) {
 						isFrist = false;
 					} else if ("1".equals(mVersion.getIs_new())) {
@@ -128,24 +137,32 @@ public class FirstControl extends BaseFragmentControl {
 						isSelect = -1;
 					}
 				} else {
+					Log.i(tag,"onResult:"+"null");
 					isSelect = -1;
 				}
-
 			}
 
 			@Override
 			public void onFinished() {
+				isShowTip = false;
 				if(isSelect == -1){
+					Log.i(tag,"检测到新路由");
 					searchRouter();
 				}else {
+					Log.i(tag,"检测到公司的路由");
 					if (!isFrist) {
+						Log.i(tag,"已配置过路由器");
 						String password = PreferencesUtils.getString(mActivity, Consts.KEY_PASSWORD,"");
 						if(!"".equals(password)){
+							Log.i(tag,"密码不为空");
+							isShowTip = true;
 							loginHttp(password);
 						}else {
+							Log.i(tag,"密码为空");
 							searchRouter();
 						}
 					}else {
+						Log.i(tag,"新路由");
 						searchRouter();
 					}
 				}
@@ -163,7 +180,6 @@ public class FirstControl extends BaseFragmentControl {
 	private ImageView ivImage;
 	private TextView tvSearchResou;
 	private void setSearchView(){
-
 		switch (isSelect){
 			case 1:
 				ivImage.setImageResource(R.mipmap.first_dialog_airmesh);
@@ -229,20 +245,21 @@ public class FirstControl extends BaseFragmentControl {
 		}
 	};
 	private void searchRouter() {
-		WifiUtils.NetworkDetector(mActivity);
+		//fun remove 1 lines;
+//		WifiUtils.NetworkDetector(mActivity);
 		if (mntDialog == null || !mntDialog.isShowing()) {
 			mntDialog = new MntDialog(mActivity, R.style.Theme_dialog, R.layout.dialog_search_router, 290, 340);
 			mntDialog.setCanceledOnTouchOutside(true);
-			lySearch = (LinearLayout) mntDialog.findViewById(R.id.dialog_ly_search);
-			lyBtn = (LinearLayout) mntDialog.findViewById(R.id.dialog_ly_btn);
-			btnRetry = (Button) mntDialog.findViewById(R.id.btn_conn_wifi);
-			tvSearchResou = (TextView) mntDialog.findViewById(R.id.dialog_tv_btn);
+			lySearch = (LinearLayout) mntDialog.findViewById(R.id.dialog_ly_search);//正在检测设备，请稍后...提示信息
+			lyBtn = (LinearLayout) mntDialog.findViewById(R.id.dialog_ly_btn);//未检测设备，请检查连接设备是否正确提示信息的布局
+			btnRetry = (Button) mntDialog.findViewById(R.id.btn_conn_wifi);//点击重试按钮
+			tvSearchResou = (TextView) mntDialog.findViewById(R.id.dialog_tv_btn);//未检测设备，请检查连接设备是否正确按钮
 			ivImage = (ImageView) mntDialog.findViewById(R.id.imageView3);
 			lySearch.setVisibility(View.VISIBLE);
 			lyBtn.setVisibility(View.GONE);
+			//去掉这一行就会一直“正在检测设备，请稍后”
 			IsRouteHelp.getInstance().loginHttp(onHttpSelector);
-
-//		// 绑定
+//		// 绑定(快速安装)
 			btnRetry.setOnClickListener(new View.OnClickListener() {
 				@Override
 				public void onClick(View v) {
@@ -257,7 +274,7 @@ public class FirstControl extends BaseFragmentControl {
 						if(!"".equals(password)){
 							loginHttp(password);
 						}else {
-						logonRouter();
+							logonRouter();
 						}
 					}
 				}
@@ -325,6 +342,7 @@ public class FirstControl extends BaseFragmentControl {
 				//解析result
 				Log.i("result",result);
 				if("1".equals(result)){
+					Log.i(tag,"login success");//fun add test
 					Cache.isLogin = true;
 //					PreferencesUtils.putString(mActivity, Consts.KEY_USERNAME,name);
 					PreferencesUtils.putString(mActivity, Consts.KEY_PASSWORD,password);
@@ -334,10 +352,19 @@ public class FirstControl extends BaseFragmentControl {
 					intent.putExtra("type",1);
 					mActivity.startActivity(intent);
 					}else {
+						Log.i(tag,"not first login");//fun add test
 						mOnFragmentSelector.onFragment(Consts.FRAG_INDEX_MAIN_ROUTER);
 					}
 				}else {
-					ShowToast(getResString(R.string.wifi_password_error));
+//					Log.i(tag,"not first login,pwd is error");
+					// fun add test 当管理员密码在平台上改变了，客户端提示用户密码已经重置
+					if(isShowTip){
+						isShowTip = false;
+						ShowToast(getResString(R.string.wifi_password_error_not_equal_oldpwd));
+					}else{
+						ShowToast(getResString(R.string.wifi_password_error));
+					}
+
 				}
 			}
 			@Override
@@ -351,7 +378,12 @@ public class FirstControl extends BaseFragmentControl {
 			@Override
 			public void onFinished() {
 				if(!Cache.isLogin){
+					Log.i(tag,"没有登录！");
 					logonRouter();
+				}else{
+					Log.i(tag,"已经登录！");
+					//fun add 当切换到公司路由器时，当路由器的密码没有更改时，直接跳转到主界面
+					mOnFragmentSelector.onFragment(Consts.FRAG_INDEX_MAIN_ROUTER);
 				}
 			}
 		});
@@ -380,4 +412,5 @@ public class FirstControl extends BaseFragmentControl {
 	public void setNOConnt() {
 		searchRouter();
 	}
+
 }

@@ -105,7 +105,7 @@ private MntDialog bindDialog;
 					}.start();
 
 				}else {
-					ShowToast(result);
+					ShowToast(getResString(R.string.set_fail));
 				}
 			}
 		});

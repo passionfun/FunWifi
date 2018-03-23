@@ -32,8 +32,6 @@ import org.xutils.x;
 
 
 public class SystemControl extends BaseFragmentControl {
-
-
     @ViewInject(R.id.tv_title)
     private TextView tvTitle;
 	private SwitchButton mShockSet ;

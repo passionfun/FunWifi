@@ -23,7 +23,6 @@ public abstract class MyCallBack<ResultType> implements Callback.CommonCallback<
         Log.i("MyCallBack",result.toString());
         if (result != null) {
             if (result.toString().startsWith("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"") || "".equals(result.toString())) {
-
                 sendBroadcast();
             } else {
                 Cache.isConnRouter = true;
