@@ -38,6 +38,7 @@ public class CrashHandler implements Thread.UncaughtExceptionHandler {
 
     private CrashHandler() {
         crashDirPath = getDataPath() + "scrash/";
+        Log.i(TAG,"directory:"+crashDirPath);
         deleteOldCrashLog();
     }
 
@@ -199,6 +200,7 @@ public class CrashHandler implements Thread.UncaughtExceptionHandler {
         return null;
     }
     public static final String getDataPath() {
+        //   外部存贮目录：/storage/emulated/0/enjia_wifi/scrash/
             return Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + "enjia_wifi" + File.separator;
     }
 

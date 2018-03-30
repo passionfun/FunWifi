@@ -58,7 +58,6 @@ public class MainControl extends BaseActivityControl {
     private RouterFragment routerFragment;
     private SystemFragment systemFragment;
     private ToolFragment toolFragment;
-
 //    private RiverHisChartFragment mapFragment;
 
     private Fragment currFragment;
