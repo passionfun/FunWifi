@@ -1,6 +1,8 @@
 package com.xalianhui.wifimanage.ui.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import com.xalianhui.wifimanage.R;
@@ -9,7 +11,7 @@ import com.xalianhui.wifimanage.interfaces.OnFragmentSelector;
 import com.xalianhui.wifimanage.ui.BaseFragment;
 
 public class SystemFragment extends BaseFragment {
-
+	private final String tag = "SystemFragment";
 	private SystemControl control;
 
 	@Override
@@ -45,4 +47,9 @@ public class SystemFragment extends BaseFragment {
 			control.Refresh();
 		}
     }
+    public void setRouterType(){
+		if(control != null){
+			control.setLedStyle();
+		}
+	}
 }

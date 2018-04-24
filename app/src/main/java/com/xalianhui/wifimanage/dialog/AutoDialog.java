@@ -9,9 +9,7 @@ import com.xalianhui.wifimanage.R;
 import com.xalianhui.wifimanage.consts.Constants;
 import com.xalianhui.wifimanage.ui.view.MntDialog;
 
-/**
- * Created by liubin on 2017/8/8.
- */
+
 
 public class AutoDialog extends MntDialog {
 

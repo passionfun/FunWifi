@@ -38,7 +38,10 @@
     <string name="admin_password">Management Password</string>
     <string name="input_admin_password">managing passwords two times inconsistent</string>
     <string name="wifi_password">Wi-Fi Password</string>
+    <string name="old_admin_password">Incorrect original password.</string>
+    <string name="reset_admin_password_fail">Reset administrator password failed.</string>
     <string name="wifi_password_error">Password error</string>
+    <string name="wifi_password_error_not_equal_oldpwd">The password has been reset. Please enter a new password.</string>
     <string name="input_wifi_password">Wi-Fi passwords two times inconsistent</string>
     <string name="wifi_password_note"> </string>
     <string name="admin_password_reconfirm">Confirm Password</string>
@@ -46,6 +49,7 @@
     <string name="btn_ok">Done</string>
     <string name="set_password_after">Once finished Wi-Fi setting,your phone will lose connection and need reconnect to new Wi-fi signal just configured.</string>
     <string name="set_ok">set successfully</string>
+    <string name="set_fail">Set failed</string>
     <string name="quit_app">Do you want to quit the program?</string>
     <string name="quit_sure">Sure</string>
     <string name="quit_cancel">Cancel</string>
@@ -92,7 +96,7 @@
     <string name="network_internet_not">Internet is not available</string>
     <string name="network_wan_type">WAN Type</string>
     <string name="network_dymanic_ip">Auto/Dynamic IP</string>
-    <string name="current_password">Current Passwork</string>
+    <string name="current_password">Current Password</string>
     <string name="new_password">New Password</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="reboot_btn">Reboot</string>
@@ -251,7 +255,7 @@
     <string name="user_agreement_c15">四、 用户信息的合理使用</string>
     <string name="user_agreement_c16">\u3000\u3000您同意本APP平台拥有通过邮件、短信电话等形式，向在本站注册用户发送信息等告知信息的权利。</string>
     <string name="user_agreement_c17">\u3000\u3000您了解并同意，本APP有权应国家司法、行政等主管部门的要求，向其提供您在本APP平台填写的注册信息和交易记录等必要信息</string>
-    <string name="device_xiansu_eg">E.g. 512KB/s = 5Mbps</string>
+    <string name="device_xiansu_eg">E.g. 512KB/s = 4Mbps</string>
     <string name="high_set_xindao">Wi-Fi information access failed. Please try again later</string>
 
 </resources>

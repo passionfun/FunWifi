@@ -9,9 +9,7 @@ import com.xalianhui.wifimanage.interfaces.OnFragmentSelector;
 import com.xalianhui.wifimanage.ui.BaseFragment;
 
 public class FirstFragment extends BaseFragment {
-
 	private FirstControl control;
-
 	@Override
 	protected void getArguments(Bundle bundle,
 			OnFragmentSelector fragmentSelector) {

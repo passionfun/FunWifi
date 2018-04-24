@@ -30,7 +30,6 @@ public class RebootActivity extends BaseActivity{
     protected void recycleView() {
         if (control != null) {
             control.onRecycle();
-            control = null;
         }
     }
 

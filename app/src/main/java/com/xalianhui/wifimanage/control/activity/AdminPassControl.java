@@ -4,6 +4,8 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.text.InputType;
+import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -16,6 +18,7 @@ import com.xalianhui.wifimanage.dialog.AutoDialog;
 import com.xalianhui.wifimanage.function.MyCallBack;
 import com.xalianhui.wifimanage.function.MyRequestParams;
 import com.xalianhui.wifimanage.ui.activity.HighSetActivity;
+import com.xalianhui.wifimanage.utils.TextUtil;
 
 import org.xutils.view.annotation.Event;
 import org.xutils.view.annotation.ViewInject;
@@ -25,7 +28,7 @@ import miky.android.common.util.PreferencesUtils;
 
 
 public class AdminPassControl extends BaseActivityControl {
-
+	private static final String tag = "AdminPassControl";
 	@ViewInject(R.id.et_password_old)
 	private EditText etPasswordOld;
 
@@ -44,7 +47,7 @@ public class AdminPassControl extends BaseActivityControl {
 	@ViewInject(R.id.iv_password2)
 	private ImageView ivPassword2;
 
-
+	private String adminOldPwd = "";
 	@Override
 	public void onInit(View rootView, Context context) {
 		super.onInit(rootView, context);
@@ -98,14 +101,30 @@ public class AdminPassControl extends BaseActivityControl {
 		String adminOld = etPasswordOld.getText().toString();
 		String adminPass = etPassword.getText().toString();
 		String adminPass2 = etPassword2.getText().toString();
-		if (adminPass == null || "".equals(adminPass)){
+		//fun add 判断原来的管理员密码和现在所输入的管理员密码是否相等
+		if(!adminOldPwd.equals(adminOld)){
+			ShowToast(getResString(R.string.old_admin_password));
+			return;
+		}
+		//fun add 判断新密码和确认新密码输入框不为空
+		if(TextUtils.isEmpty(adminPass) || TextUtils.isEmpty(adminPass2)){
 			ShowToast(getResString(R.string.input_password2));
 			return;
 		}
-		if (adminPass != null && !adminPass.equals(adminPass2)){
+		//fun add 判断两次输入的新密码一致
+		if(!adminPass.equals(adminPass2)){
 			ShowToast(getResString(R.string.input_admin_password));
 			return;
 		}
+		//fun remove 8 lines;
+//		if (adminPass == null || "".equals(adminPass)){
+//			ShowToast(getResString(R.string.input_password2));
+//			return;
+//		}
+//		if (adminPass != null && !adminPass.equals(adminPass2)){
+//			ShowToast(getResString(R.string.input_admin_password));
+//			return;
+//		}
 		loginHttp(adminOld,adminPass);
 	}
 
@@ -113,6 +132,10 @@ public class AdminPassControl extends BaseActivityControl {
 	private void initView() {
 		setTopView(Consts.TopPage.PAGE);
 		setTitle(getResString(R.string.menu_management));
+
+		//fun add  取出保存在sharedpreference中的密码和输入框中的密码
+		adminOldPwd = PreferencesUtils.getString(mActivity, Consts.KEY_PASSWORD,"");
+
 		ivPasswordOld.setSelected(false);
 		ivPassword.setSelected(false);
 		ivPassword2.setSelected(false);
@@ -149,7 +172,8 @@ public class AdminPassControl extends BaseActivityControl {
 						}
 					});
 				}else {
-					ShowToast(result);
+//					ShowToast(result);
+					ShowToast(getResString(R.string.reset_admin_password_fail));
 				}
 			}
 		});

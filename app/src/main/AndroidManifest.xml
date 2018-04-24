@@ -5,6 +5,8 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!--fun add android:screenOrientation="portrait"限制手机屏幕竖屏，防止用户切换屏幕方向，导致APP崩溃-->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/icon_app"
@@ -13,7 +15,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:name="com.xalianhui.wifimanage.app.App">
-        <activity android:name=".ui.activity.WelcomeActivity">
+        <activity android:name=".ui.activity.WelcomeActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,172 +24,184 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.activity.MainActivity"
-            android:launchMode="singleTask">
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action  android:name = "com.xalianhui.wifimanage.ui.activity.MainActivity"  />
                 <category android:name = "android.intent.category.DEFAULT"  />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.SelectLoginActivity">
+        <activity android:name=".ui.activity.SelectLoginActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action  android:name = "com.xalianhui.wifimanage.ui.activity.SelectLoginActivity"  />
                 <category android:name = "android.intent.category.DEFAULT"  />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.BroadbandActivity">
+        <activity android:name=".ui.activity.BroadbandActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action  android:name = "com.xalianhui.wifimanage.ui.activity.BroadbandActivity"  />
                 <category android:name = "android.intent.category.DEFAULT"  />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.SetPasswordActivity">
+        <activity android:name=".ui.activity.SetPasswordActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action  android:name = "com.xalianhui.wifimanage.ui.activity.SetPasswordActivity"  />
                 <category android:name = "android.intent.category.DEFAULT"  />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.SetWifiActivity">
+        <activity android:name=".ui.activity.SetWifiActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action  android:name = "com.xalianhui.wifimanage.ui.activity.SetWifiActivity"  />
                 <category android:name = "android.intent.category.DEFAULT"  />
             </intent-filter>
         </activity>
         <activity android:name=".ui.activity.HighSetActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/SampleTheme.Light">
             <intent-filter>
                 <action  android:name = "com.xalianhui.wifimanage.ui.activity.HighSetActivity"  />
                 <category android:name = "android.intent.category.DEFAULT"  />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.AdminPasswActivity">
+        <activity android:name=".ui.activity.AdminPasswActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action  android:name = "com.xalianhui.wifimanage.ui.activity.AdminPasswActivity"  />
                 <category android:name = "android.intent.category.DEFAULT"  />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.NetSetActivity">
+        <activity android:name=".ui.activity.NetSetActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action  android:name = "com.xalianhui.wifimanage.ui.activity.NetSetActivity"  />
                 <category android:name = "android.intent.category.DEFAULT"  />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.RestoreActivity">
+        <activity android:name=".ui.activity.RestoreActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action  android:name = "com.xalianhui.wifimanage.ui.activity.RestoreActivity"  />
                 <category android:name = "android.intent.category.DEFAULT"  />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.RebootActivity">
+        <activity android:name=".ui.activity.RebootActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action  android:name = "com.xalianhui.wifimanage.ui.activity.RebootActivity"  />
                 <category android:name = "android.intent.category.DEFAULT"  />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.DeviceXQActivity"/>
-        <activity android:name=".ui.activity.MenuSelectActivity">
+        <activity android:name=".ui.activity.DeviceXQActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.MenuSelectActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action  android:name = "com.xalianhui.wifimanage.ui.activity.MenuSelectActivity"  />
                 <category android:name = "android.intent.category.DEFAULT"  />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.OneActivity">
+        <activity android:name=".ui.activity.OneActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action  android:name = "com.xalianhui.wifimanage.ui.activity.OneActivity"  />
                 <category android:name = "android.intent.category.DEFAULT"  />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.HealthyActivity">
+        <activity android:name=".ui.activity.HealthyActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action  android:name = "com.xalianhui.wifimanage.ui.activity.HealthyActivity"  />
                 <category android:name = "android.intent.category.DEFAULT"  />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.JiazhangActivity">
+        <activity android:name=".ui.activity.JiazhangActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action  android:name = "com.xalianhui.wifimanage.ui.activity.JiazhangActivity"  />
                 <category android:name = "android.intent.category.DEFAULT"  />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.GreenWIFIActivity">
+        <activity android:name=".ui.activity.GreenWIFIActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action  android:name = "com.xalianhui.wifimanage.ui.activity.GreenWIFIActivity"  />
                 <category android:name = "android.intent.category.DEFAULT"  />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.BlackActivity">
+        <activity android:name=".ui.activity.BlackActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action  android:name = "com.xalianhui.wifimanage.ui.activity.BlackActivity"  />
                 <category android:name = "android.intent.category.DEFAULT"  />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.XiansuActivity">
+        <activity android:name=".ui.activity.XiansuActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action  android:name = "com.xalianhui.wifimanage.ui.activity.XiansuActivity"  />
                 <category android:name = "android.intent.category.DEFAULT"  />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.SDXiansuActivity">
+        <activity android:name=".ui.activity.SDXiansuActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action  android:name = "com.xalianhui.wifimanage.ui.activity.SDXiansuActivity"  />
                 <category android:name = "android.intent.category.DEFAULT"  />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.FirmWareActivity">
+        <activity android:name=".ui.activity.FirmWareActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action  android:name = "com.xalianhui.wifimanage.ui.activity.FirmWareActivity"  />
                 <category android:name = "android.intent.category.DEFAULT"  />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.FkXiansuActivity">
+        <activity android:name=".ui.activity.FkXiansuActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action  android:name = "com.xalianhui.wifimanage.ui.activity.FkXiansuActivity"  />
                 <category android:name = "android.intent.category.DEFAULT"  />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.XiansuAppActivity">
+        <activity android:name=".ui.activity.XiansuAppActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action  android:name = "com.xalianhui.wifimanage.ui.activity.XiansuAppActivity"  />
                 <category android:name = "android.intent.category.DEFAULT"  />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.XiansuDeviceActivity">
+        <activity android:name=".ui.activity.XiansuDeviceActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action  android:name = "com.xalianhui.wifimanage.ui.activity.XiansuDeviceActivity"  />
                 <category android:name = "android.intent.category.DEFAULT"  />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.DeviceXiansuActivity">
+        <activity android:name=".ui.activity.DeviceXiansuActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action  android:name = "com.xalianhui.wifimanage.ui.activity.DeviceXiansuActivity"  />
                 <category android:name = "android.intent.category.DEFAULT"  />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.UserAgreementActivity">
+        <activity android:name=".ui.activity.UserAgreementActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action  android:name = "com.xalianhui.wifimanage.ui.activity.UserAgreementActivity"  />
                 <category android:name = "android.intent.category.DEFAULT"  />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.StaticWanActivity">
+        <activity android:name=".ui.activity.StaticWanActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action  android:name = "com.xalianhui.wifimanage.ui.activity.StaticWanActivity"  />
                 <category android:name = "android.intent.category.DEFAULT"  />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.AddDeviceActivity">
+        <activity android:name=".ui.activity.AddDeviceActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action  android:name = "com.xalianhui.wifimanage.ui.activity.AddDeviceActivity"  />
                 <category android:name = "android.intent.category.DEFAULT"  />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.JiazDeviceActivity">
+        <activity android:name=".ui.activity.JiazDeviceActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action  android:name = "com.xalianhui.wifimanage.ui.activity.JiazDeviceActivity"  />
                 <category android:name = "android.intent.category.DEFAULT"  />
             </intent-filter>
         </activity>
         <activity android:name=".ui.activity.OfflineActivity"
-            android:theme="@style/SampleTheme.Light">
+            android:theme="@style/SampleTheme.Light"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action  android:name = "com.xalianhui.wifimanage.ui.activity.OfflineActivity"  />
                 <category android:name = "android.intent.category.DEFAULT"  />

@@ -360,9 +360,4 @@ public class DeviceXQControl extends BaseActivityControl {
 			}
 		}
 	};
-
-
-
-
-
 }

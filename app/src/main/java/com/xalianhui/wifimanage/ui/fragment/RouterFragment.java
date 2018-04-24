@@ -53,4 +53,12 @@ public class RouterFragment extends BaseFragment {
 			control.setDeviceList(records);
 		}
     }
+	/**
+	 * fun add ,如果侧边栏打开了，用户手动断开网络，侧边栏还是打开的
+	 */
+	public void closeSlideMenu(){
+		if(control != null){
+			control.closeSlideMenu();
+		}
+	}
 }

@@ -287,7 +287,6 @@ public class RouterControl extends BaseFragmentControl {
 			}else {
 				isSelect = -1;
 			}
-
 		}
 		@Override
 		public void onFinished() {
@@ -313,8 +312,8 @@ public class RouterControl extends BaseFragmentControl {
 				tv_routerStyleText.setText(getResString(R.string.first_search_s3));
 				break;
 			case 4:
-//				iv_routerStyle.setImageResource(R.mipmap.first_dialog_airframe);
-//				tv_routerStyleText.setText(getResString(R.string.first_search_s4));
+				iv_routerStyle.setImageResource(R.mipmap.first_dialog_airframe);
+				tv_routerStyleText.setText(getResString(R.string.first_search_s4));
 				break;
 			default:
 //				iv_routerStyle.setImageResource(R.mipmap.first_dialog_router);
@@ -369,9 +368,9 @@ public class RouterControl extends BaseFragmentControl {
 				downLink.setText(TextUtil.removeKB(downStr));
 				downLinkKb.setText("KB/s");
 			}
-			if (deviceList.getOnline_sta()!=null&&deviceList.getOnline_sta().size()>0) {
+			if (deviceList.getOnline_sta()!= null && deviceList.getOnline_sta().size()>0) {
 				for (int i = 0;i<deviceList.getOnline_sta().size();i++) {
-					if (indexmac != ""&&indexmac.equals(deviceList.getOnline_sta().get(i).getMac())) {
+					if (indexmac != "" && indexmac.equals(deviceList.getOnline_sta().get(i).getMac())) {
 						Intent intent = new Intent();  //用于传输数据的intent
 						intent.setAction(Consts.ACTION_BROADCAST_LOCATION);
 						intent.putExtra("device", deviceList.getOnline_sta().get(i));//为这个intent加上action，用于广播过滤器过滤
@@ -383,5 +382,11 @@ public class RouterControl extends BaseFragmentControl {
 	}
 	public void Refresh() {
 		initView();
+	}
+	public void closeSlideMenu(){
+		if(mPopup != null && mPopup.isShowing()){
+			mPopup.dismiss();
+			mPopup = null;
+		}
 	}
 }

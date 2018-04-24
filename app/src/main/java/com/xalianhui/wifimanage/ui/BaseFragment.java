@@ -50,9 +50,8 @@ public abstract class BaseFragment extends Fragment {
 		if (mFragmentRes > 0) {
 			try {
 				mContentView = LayoutInflater.from(getActivity()).inflate(
-						mFragmentRes,
-						(FrameLayout) mBaseView
-								.findViewById(R.id.baseFragment_content));
+						        mFragmentRes,
+						       (FrameLayout) mBaseView.findViewById(R.id.baseFragment_content));
 				// initView(mContentView);
 			} catch (Exception e) {
 				e.printStackTrace();
