@@ -133,6 +133,7 @@ public class MainControl extends BaseActivityControl {
                     }else{
                         Log.i(tag,"断开连接firstfragment is null");
                     }
+                    //路由器标签界面
                     if (routerFragment != null) {
                         Log.i(tag, "routerFragment not null");
                         routerFragment.closeSlideMenu();
