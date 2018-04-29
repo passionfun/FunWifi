@@ -129,8 +129,6 @@ public abstract class BaseActivity extends FragmentActivity {
 	protected void onDestroy() {
 		super.onDestroy();
 		destoryView();
-//		//fun add 程序启动添加activity到任务栈，程序退出时销毁任务栈
-//		ExitUtil.newInstance().exit();
 		System.gc();
 	}
 

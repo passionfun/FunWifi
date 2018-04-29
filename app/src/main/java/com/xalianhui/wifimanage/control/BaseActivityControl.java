@@ -35,7 +35,7 @@ public abstract class BaseActivityControl {
 		mActivity = (BaseActivity) context;
 		// SysApplication.getInstance().addActivity(mBaseActivity);
 		mRootView = rootView;
-		
+
 	}
 
 	
@@ -47,7 +47,7 @@ public abstract class BaseActivityControl {
 	 */
 	public final void recycleView() {
 		onRecycle();
-		
+
 		System.gc();
 	}
 

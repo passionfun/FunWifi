@@ -10,7 +10,6 @@ import com.xalianhui.wifimanage.consts.Constants;
 import com.xalianhui.wifimanage.ui.view.MntDialog;
 
 
-
 public class AutoDialog extends MntDialog {
 
     public AutoDialog(Context context,String title,String content) {

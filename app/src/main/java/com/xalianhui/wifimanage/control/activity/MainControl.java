@@ -24,13 +24,11 @@ import com.xalianhui.wifimanage.consts.Constants;
 import com.xalianhui.wifimanage.consts.Consts;
 import com.xalianhui.wifimanage.consts.Icont;
 import com.xalianhui.wifimanage.control.BaseActivityControl;
-import com.xalianhui.wifimanage.control.fragment.FirstControl;
 import com.xalianhui.wifimanage.db.DBDao;
 import com.xalianhui.wifimanage.db.enty.SlideItem;
 import com.xalianhui.wifimanage.function.IsRouteHelp;
 import com.xalianhui.wifimanage.function.MyCallBack;
 import com.xalianhui.wifimanage.function.MyRequestParams;
-import com.xalianhui.wifimanage.ui.BaseActivity;
 import com.xalianhui.wifimanage.ui.activity.MainActivity;
 import com.xalianhui.wifimanage.ui.activity.WelcomeActivity;
 import com.xalianhui.wifimanage.ui.fragment.FirstFragment;
@@ -38,12 +36,10 @@ import com.xalianhui.wifimanage.ui.fragment.RouterFragment;
 import com.xalianhui.wifimanage.ui.fragment.SystemFragment;
 import com.xalianhui.wifimanage.ui.fragment.ToolFragment;
 import com.xalianhui.wifimanage.ui.view.BasePopupHelper;
-import com.xalianhui.wifimanage.utils.ExitUtil;
 import com.xalianhui.wifimanage.utils.JsonUtil;
 import com.xalianhui.wifimanage.utils.TextUtil;
 import com.xalianhui.wifimanage.utils.WifiUtils;
 
-import org.jsoup.Connection;
 import org.xutils.common.Callback;
 import org.xutils.ex.DbException;
 import org.xutils.view.annotation.Event;
@@ -65,8 +61,6 @@ public class MainControl extends BaseActivityControl {
     private RouterFragment routerFragment;
     private SystemFragment systemFragment;
     private ToolFragment toolFragment;
-
-//    private RiverHisChartFragment mapFragment;
 
     private Fragment currFragment;
 
@@ -247,7 +241,6 @@ public class MainControl extends BaseActivityControl {
                     transaction.show(firstFragment);
                 }
                 currFragment = firstFragment;
-
                 break;
             case Consts.FRAG_INDEX_MAIN_ROUTER:
                 if (routerFragment == null) {

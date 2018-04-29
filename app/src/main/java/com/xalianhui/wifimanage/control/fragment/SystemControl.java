@@ -38,7 +38,6 @@ import org.xutils.view.annotation.Event;
 import org.xutils.view.annotation.ViewInject;
 import org.xutils.x;
 
-import javax.xml.parsers.FactoryConfigurationError;
 
 
 public class SystemControl extends BaseFragmentControl {
@@ -166,7 +165,6 @@ public class SystemControl extends BaseFragmentControl {
 				break;
 		}
 	}
-
 	private void getDeviceStatuHttp(){
 		MyRequestParams params = new MyRequestParams(Icont.Url_TopIP+ Icont.get_led_Url);
 		x.http().post(params, new MyCallBack<String>() {

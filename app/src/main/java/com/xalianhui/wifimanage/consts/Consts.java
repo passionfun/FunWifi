@@ -24,9 +24,6 @@ public class Consts {
 		 MAIN, PAGE, PAGE2
 	}
 
-//	public static final int ACTIVITY_REBOOT_RE
-
-
 	public static final int SELECT_MAIN_CONN_ROUTER = 1000;
 
 

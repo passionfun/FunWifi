@@ -58,7 +58,6 @@ public abstract class MyCallBack<ResultType> implements Callback.CommonCallback<
     public void onCancelled(CancelledException cex) {
 
     }
-
     @Override
     public void onFinished() {
 

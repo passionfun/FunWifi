@@ -5,8 +5,6 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
-    <!--fun add android:screenOrientation="portrait"限制手机屏幕竖屏，防止用户切换屏幕方向，导致APP崩溃-->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/icon_app"

@@ -22,7 +22,6 @@ public class ExitUtil {
 		if (act != null) {
 			actList.add(act);
 		}
-		Log.i("activity任务栈的大小","size:"+actList.size());
 	}
 	
 	public void exit(){

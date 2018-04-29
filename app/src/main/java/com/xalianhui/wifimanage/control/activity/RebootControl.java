@@ -2,7 +2,6 @@ package com.xalianhui.wifimanage.control.activity;
 
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
@@ -19,7 +18,6 @@ import com.xalianhui.wifimanage.control.BaseActivityControl;
 import com.xalianhui.wifimanage.dialog.AutoDialog;
 import com.xalianhui.wifimanage.function.MyCallBack;
 import com.xalianhui.wifimanage.function.MyRequestParams;
-import com.xalianhui.wifimanage.ui.BaseActivity;
 import com.xalianhui.wifimanage.ui.view.MntDialog;
 
 import org.xutils.common.Callback;
@@ -228,8 +226,4 @@ private MntDialog bindDialog;
 //			}
 //		}
 //	};
-
-
-
-
 }

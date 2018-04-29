@@ -10,8 +10,6 @@ import android.support.v4.content.ContextCompat;
 import android.util.Log;
 
 
-import com.nostra13.universalimageloader.cache.memory.impl.FIFOLimitedMemoryCache;
-
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.PrintWriter;
@@ -66,7 +64,6 @@ public class CrashHandler implements Thread.UncaughtExceptionHandler {
             String fileName = null;
             for (File file : crashFiles) {
                 fileName = file.getName().substring(0, file.getName().lastIndexOf("."));
-//                Log.i(TAG,"FILENAME:"+ fileName);
                 if (fileName.compareTo(expire) <= 0) {
                     file.delete();
                 }
